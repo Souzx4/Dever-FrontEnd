@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Currículo Psicóloga</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --cor-principal: #6c63ff;
+      --cor-fundo: #f9f9f9;
+      --texto: #333;
+      --borda: #ddd;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--cor-fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    .curriculo {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    .topo {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .topo img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid var(--cor-principal);
+      object-fit: cover;
+    }
+
+    .topo-info h1 {
+      font-size: 2em;
+      color: var(--cor-principal);
+    }
+
+    .topo-info p {
+      margin: 5px 0;
+    }
+
+    h2 {
+      margin-top: 30px;
+      border-left: 5px solid var(--cor-principal);
+      padding-left: 10px;
+      color: var(--cor-principal);
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    ul li::before {
+      content: '•';
+      color: var(--cor-principal);
+      position: absolute;
+      left: 0;
+    }
+
+    .contato i {
+      margin-right: 8px;
+      color: var(--cor-principal);
+    }
+
+    .botoes {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .botao {
+      background: var(--cor-principal);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .botao:hover {
+      background: #554fe9;
+    }
+
+    @media (max-width: 600px) {
+      .topo {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="curriculo">
+    <div class="topo">
+      <img src="[URL_DA_SUA_FOTO]" alt="Foto profissional">
+      <div class="topo-info">
+        <h1>[SEU NOME]</h1>
+        <p><strong>Psicóloga • CRP:</strong> [SEU CRP]</p>
+        <p><strong>Especialidade:</strong> [Ex: Terapia Cognitivo-Comportamental]</p>
+      </div>
+    </div>
+
+    <h2>Sobre mim</h2>
+    <p>[Descreva brevemente sua missão como psicóloga, sua abordagem, público-alvo, etc.]</p>
+
+    <h2>Formação Acadêmica</h2>
+    <ul>
+      <li>[Curso de Psicologia] – [Nome da Faculdade] ([Ano])</li>
+    </ul>
+
+    <h2>Experiência Profissional</h2>
+    <ul>
+      <li>[Cargo] – [Instituição] ([Ano Início] – [Ano Fim ou Atual])</li>
+    </ul>
+
+    <h2>Especializações</h2>
+    <ul>
+      <li>[Curso de especialização] – [Instituição] ([Ano])</li>
+    </ul>
+
+    <h2>Contato</h2>
+    <ul class="contato">
+      <li><i class="fas fa-envelope"></i> [SEU EMAIL]</li>
+      <li><i class="fas fa-phone"></i> [SEU TELEFONE]</li>
+      <li><i class="fab fa-linkedin"></i> [URL DO LINKEDIN]</li>
+      <li><i class="fab fa-instagram"></i> [@usuario_profissional]</li>
+    </ul>
+
+    <div class="botoes">
+      <a href="#" class="botao">Agendar Consulta</a>
+      <a href="#" class="botao">Baixar Currículo (PDF)</a>
+    </div>
+  </div>
+</body>
+</html>
