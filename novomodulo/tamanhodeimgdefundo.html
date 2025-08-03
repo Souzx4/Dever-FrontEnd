@@ -7,15 +7,24 @@
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /* corta para ficar de acordo com o site e o contain fica o tamanho fico da foto original sem cortar nada */
+            background-size: cover; /* corta para ficar de acordo com o site e o contain fica o tamanho fico da foto original sem cortar nada /*
+            background-attachment: fixed; /* exite dois tipos, o scrooll que faz se o site rolar o fundo rola junto, e o fixed, que se o site fica fixado o fundo enquando o restante fica movel */
+
+            /* shorthand  - background
+             color > image > position > repeat > [size (nn ta dando certo)] > attachment
+            */
+            
+            background: black url(wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
