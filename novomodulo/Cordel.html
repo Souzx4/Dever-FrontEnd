@@ -22,20 +22,84 @@
         * {
             margin: 0px;
             padding: 0px;
+            margin: auto;
         }
         html, body {
             min-height: 100vh;
             background-color: darkgray;
             font-family: var(--fonte1);
         }
-        
+        h1 {
+            font-family: var(--fonte2);
+            text-align: center;
+            font-size: 5em;
+            padding-top: 60px;
+            background-color: black;
+            color: white;
+        }
+        p {
+            padding: 70px 0px 70px 40px;
+        }
+        .link {
+            font-family: var(--fonte1);
+            text-align: center;
+            font-size: 12px;
+            line-height: 1.2em;
+            background-color: black;
+            color: white;
+            padding-bottom: 50px;
+            padding-top: 20px;
+        }
+        .link1 {
+            font-family: var(--fonte1);
+            text-align: center;
+            font-size: 16px;
+            color: white;
+           
+        }
+        .link a {
+            color: white;
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+        .poema {
+            
+            background-color: white;
+            font-family: var(--fonte3);
+            font-size: 30px;
+        }
+        .imagem {
+            padding-left: 10px;
+            font-family: var(--fonte3);
+            font-size: 30px;
+        }
+        #foto1 {
+            background: url(background001.jpg) 50% 50% no-repeat fixed;
+            background-size: cover;
+            color: white;
+            padding: 10rem 30px;
+        }
+        #foto2 {
+            background: url(background002.jpg) 50% 50% no-repeat fixed;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            padding: 10rem 30px;
+        }
+        .final {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px 0px;
+        }
     </style>
 </head>
 <body>
     <header>
     <h1>Cordel Moderno</h1>
 
-    <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" class="link">Milton Duarte</a></p>
+    <p class="link">Por <a href="https://www.recantodasletras.com.br/poesias/3186743" class="link">Milton Duarte</a></p>
     </header>
 
     <section class="poema">
@@ -50,7 +114,7 @@
         </p>
     </section>
 
-    <section class="imagem" id="background001.jpg">
+    <section class="imagem" id="foto1">
         <p>
             Não é mais como era antes <br>
             É tudo abreviado <br>
@@ -84,7 +148,7 @@
         </p>
     </section>
 
-    <section class="imagem" id="background002.jpg">
+    <section class="imagem" id="foto2">
         <p>
             Tenho saudade das cartas <br>
             Escritas com a própria mão <br>
@@ -118,8 +182,8 @@
         </p>
     </search>
     <footer>
-        <p><a href="https://www.recantodasletras.com.br/autor_textos.php?pag=1&id=9806&categoria=C&lista=lidos">Milton Duarte</a> - 08/2024</p>
-        <p>Criado por <a href="https://github.com/Souzx4">Souzx4</a></p>
+        <p class="final"><a href="https://www.recantodasletras.com.br/autor_textos.php?pag=1&id=9806&categoria=C&lista=lidos" class="link1">Milton Duarte</a> - 08/2024</p>
+        <p class="final">Criado por <a href="https://github.com/Souzx4" class="link1">Souzx4</a></p>
     </footer>
 </body>
 </html>
