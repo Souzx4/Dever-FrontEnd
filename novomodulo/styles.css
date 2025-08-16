@@ -26,7 +26,7 @@ header {
 }
 header > h1 {
     font-family: var(--font2);
-    font-size: 10vw; /* tamanho da fonte em relação à largura da viewport */
+    font-size: 10vw; /* tamanho da fonte em relação à largura da viewport, tipo 10% de 100% da vh */
     padding-top: 50px;
     font-variant: small-caps; /* para deixar as letras minúsculas em maiúsculas, mas com tamanho menor que as maiúsculas normais */
 
@@ -57,14 +57,30 @@ section {
     font-family: var(--font3);
     font-size: 3.5vw; /* tamanho da fonte em relação à largura da viewport */
 }
+section > p {
+    margin-bottom: 2em;
+}
 .imagem {
-    background-color: rgba(31, 30, 30, 0.836);
+    background-color: rgb(31, 30, 30);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.873);
+    background-size: cover; /* para cobrir todo o espaço da div */
+    background-attachment: fixed; /* para fixar a imagem de fundo */
+    background-position: right center; /* para centralizar a imagem */
 }
 .imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.137);
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.695);
+}
+#img1 {
+    background-image: url(background001.jpg);
+    
+}
+#img2 {
+    background-image: url(background002.jpg);
+    
 }
 footer {
     background-color: black;
