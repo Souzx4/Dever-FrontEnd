@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo - Psicóloga</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    :root {
+      --roxo: #000000;
+      --branco: #fff;
+      --cinza: #f2f2f2;
+      --azul-claro: #dbe9f4;
+      --texto: #2c3e50;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #10403B, #127369);
+      color: var(--texto);
+    }
+
+    .curriculo {
+      max-width: 850px;
+      margin: 20px auto;
+      background: var(--branco);
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: slideIn 0.6s ease;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .topo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .topo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--roxo);
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      color: var(--roxo);
+      font-size: 1.9em;
+    }
+
+    .subtitulo {
+      font-size: 1em;
+      color: #555;
+    }
+
+    h2 {
+      margin-top: 18px;
+      border-left: 5px solid var(--roxo);
+      padding-left: 8px;
+      font-size: 1.3em;
+    }
+
+    .section {
+      margin-top: 12px;
+      padding: 5px 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 8px;
+      padding-left: 18px;
+    }
+
+    ul li {
+      position: relative;
+      margin-bottom: 6px;
+      font-size: 0.95em;
+      line-height: 1.3em;
+    }
+
+    ul li::before {
+      content: "▹";
+      color: var(--roxo);
+      position: absolute;
+      left: -15px;
+    }
+
+    .contato i {
+      color: var(--roxo);
+      margin-right: 8px;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .botao {
+      background: var(--roxo);
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-size: 0.9em;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background: #8AA6A3;
+    }
+
+    @media print {
+      body {
+        background: white !important;
+      }
+
+      .curriculo {
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .botoes {
+        display: none !important;
+      }
+
+      .topo img {
+        border: 3px solid var(--roxo);
+      }
+
+      h1, h2 {
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="curriculo">
+    <div class="topo">
+      <img src=" " alt="Foto profissional" />
+      <h1>Gilmar Sousa De Brito</h1>
+      <p class="subtitulo">Engenheiro de Software</p>
+    </div>
+
+    <div class="section">
+      <h2>Sobre Mim</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Formação Acadêmica</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Formação Complementar</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Atuação Profissional</h2>
+      <ul>
+        <li></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Contato</h2>
+      <ul class="contato">
+        <li><i class="fas fa-envelope"></i> EMAIL: gilmarsousa717gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="botoes">
+      <a class="botao" href="https://wa.me/+5586999509607?text=Olá%20tudo%20bem?" target="_blank">
+        Entre Em Contato Comigo Via WhatsApp
+      </a>
+      <button class="botao" onclick="window.print()">Baixar/Imprimir Currículo</button>
+    </div>
+  </div>
+
+</body>
+</html>
