@@ -12,6 +12,12 @@
             width: 500px;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -19,6 +25,9 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        tbody tr:nth-child(even) { /*odd(impar) even(par) efeito para ficar listrado uma sim e outra não */
+            background-color: lightgray;
         }
         .num {
             text-align: right;
@@ -30,6 +39,7 @@
     <!--
      anatomia para tabelas grandes
      table
+        caption
         thead
             tr,td, th
         tbody
@@ -38,10 +48,11 @@
             tr,td, th
      -->
     <table>
+        <caption>População dos estados brasileiros - 2024</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,7 +167,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
         </tfoot>

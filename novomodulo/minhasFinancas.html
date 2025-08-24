@@ -9,8 +9,14 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 500px;
+            width: auto;
             border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td, th {
             border: 1px solid black;
@@ -20,13 +26,20 @@
             background-color: gray;
             color: white;
         }
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        .h1 {
+            text-align: center;
+        }
         .num {
             text-align: right;
         }
     </style>
 </head>
 <body>
-    <h1>Finanças</h1>
+    <h1 class="h1">Finanças</h1>
     <!--
      anatomia para tabelas grandes
      table
@@ -39,6 +52,9 @@
      -->
     <table>
         <thead>
+            <caption>
+                Minhas Finanças de 2025
+            </caption>
             <tr>
                 <th>Clientes</th>
                 <th>data</th>
@@ -75,7 +91,7 @@
             </tr>
             <tr>
                 <td>Bruno Matos</td>
-                <td class="num">5 de junho</td>
+                <td class="num">30 de maio</td>
                 <td class="num">R$ 600,00</td>
                 <td>R$ 54,00</td>
                 <td class="num"> 0</td>
@@ -83,7 +99,7 @@
             </tr>
             <tr>
                 <td>Bruno Matos</td>
-                <td class="num">5 de julho</td>
+                <td class="num">11 de junho</td>
                 <td class="num">R$ 1000,00</td>
                 <td>R$ 80,00</td>
                 <td class="num"> 0</td>
@@ -132,12 +148,12 @@
         </tbody>
         <tfoot>
             <tr>
+                <th>Total a receber</th>
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <th>Total a receber</th>               
-                <td class="num"><strong>R$ 6.272,55</strong></td>
+                <td></td>               
+                <td class="num"><strong>R$ 6.203,00</strong></td>
             </tr>
         </tfoot>
     </table>
