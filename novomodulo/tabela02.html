@@ -11,6 +11,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.2em;
@@ -25,6 +26,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky; /* para ficar fixo */
+            top: -1px; /* para ficar colado no topo */
+            background-color: black; /* para ficar com a cor de fundo */
         }
         tbody tr:nth-child(even) { /*odd(impar) even(par) efeito para ficar listrado uma sim e outra não */
             background-color: lightgray;
