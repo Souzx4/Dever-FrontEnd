@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabela 3</h1>
+    <table>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr> <!-- só existe escopo em th -->
+                <th scope="col">Grupos</th> 
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana maria santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Maria Clara</td>
+                <td>O Exorcista</td>
+                <td>O Iluminado</td>
+                <td>Invocação do Mal</td>
+            </tr>
+            <tr>
+                <td>Juliana Souza</td>
+                <td>Interestelar</td>
+                <td>Gravidade</td>
+                <td>A Chegada</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>João</td>
+                <td>Matrix</td>
+                <td>Clube da Luta</td>
+                <td>batman</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>O Senhor dos Anéis</td>
+                <td>Harry Potter</td>
+                <td>Star Wars</td>
+            </tr>
+            <tr>
+                <td>Carlos Eduardo</td>
+                <td>Vingadores</td>
+                <td>Homem de Ferro</td>
+                <td>Thor</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
