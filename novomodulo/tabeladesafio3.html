@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>desafio 3</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Area</th>
+                <th>Notas</th>
+                <th rowspan="2">Disciplinas</th>                
+                <th rowspan="2">Media</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td colspan="2">Matematica</td>
+                <td>5.5</td>
+                <td>7.5</td>
+                <td>6.5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Fisica</td>
+                <td>8.5</td>
+                <td>9.5</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Quimica</td>
+                <td>6.0</td>
+                <td>7.0</td>
+                <td>6.5</td>
+            </tr>
+            <tr>
+                <td colspan="2">Biologia</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5" scope="row">Media de humanas</th>
+                <td>7.5</td>
+            </tr>
+        </tfoot>        
+    </table>
+</body>
+</html>
