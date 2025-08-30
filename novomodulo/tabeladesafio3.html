@@ -11,6 +11,10 @@
         table {
             border-collapse: collapse;
         }
+        thead, tfoot, .media {
+            background-color: gray;
+            color: white;
+        }
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -23,41 +27,62 @@
         <thead>
             <tr>
                 <th rowspan="2">Area</th>
-                <th>Notas</th>
-                <th rowspan="2">Disciplinas</th>                
+                <th rowspan="2">Disciplinas</th> 
+                <th colspan="2">Notas</th>               
                 <th rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th rowspan="4">Exatas</th>
-                <td colspan="2">Matematica</td>
+                <td>Matematica</td>
                 <td>5.5</td>
                 <td>7.5</td>
                 <td>6.5</td>
             </tr>
             <tr>
-                <td colspan="2">Fisica</td>
+                <td>Fisica</td>
                 <td>8.5</td>
                 <td>9.5</td>
                 <td>9.0</td>
             </tr>
             <tr>
-                <td rowspan="2">Quimica</td>
+                <td>Quimica</td>
                 <td>6.0</td>
                 <td>7.0</td>
                 <td>6.5</td>
             </tr>
             <tr>
-                <td colspan="2">Biologia</td>
+                <td>Biologia</td>
                 <td>8.0</td>
                 <td>9.0</td>
                 <td>8.5</td>
             </tr>
+            <tr>
+                <th colspan="4" class="media">Media de exatas</th>
+                <td class="media">7</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>Historia</td>
+                <td>6.5</td>
+                <td>7.5</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>7.75</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="5" scope="row">Media de humanas</th>
+                <th colspan="4" scope="row">Media de humanas</th>
                 <td>7.5</td>
             </tr>
         </tfoot>        
