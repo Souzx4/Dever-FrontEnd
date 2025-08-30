@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.nome {
+            background-color: lightblue;
+        }
+        col.sexo, col.idade {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo" span="2">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Carlos</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Engenheiro</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+        </thead>
+    </table>
+</body>
+</html>
