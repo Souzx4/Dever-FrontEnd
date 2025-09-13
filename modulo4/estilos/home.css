@@ -16,9 +16,20 @@ h1 {
     padding: 10px;
     text-align: center;
 }
-
-manu {
+#menu {
+    background-color: rgb(42, 42, 42);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+#menu:hover {
+    background-color: white;
+    color: black;
+}
+menu {
+    display: none;
 }
 menu ul {
     list-style-type: none;
