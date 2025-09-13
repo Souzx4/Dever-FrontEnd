@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> <!-- link para o icone do menu https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3-->
+</head>
+<body>
+    <header>
+        <h1>Tudo sobre as Grandes Guerras</h1>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()"> menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="menuResponsivo.html">Primeira Guerra</a></li>
+                <li><a href="menuResponsivo2.html">Segunda Guerra</a></li>
+                <li><a href="menuResponsivo3.html">Guerra Fria</a></li>
+                <li><a href="menuResponsivo4.html">Guerra da Coreia</a></li>
+                <li><a href="menuResponsivo5.html">Guerra ao Terror</a></li>
+            </ul>
+        </menu">
+    </header>
+    <main>
+        <article>
+            <h2>A Guerra da Coreia (1950-1953)</h2> 
+            <p>foi um conflito entre a Coreia do Norte comunista e a Coreia do Sul capitalista, que resultou da divisão da península após a Segunda Guerra Mundial. A guerra, um dos primeiros grandes confrontos da Guerra Fria, começou com a invasão da Coreia do Sul pela Coreia do Norte em 1950. A ONU autorizou uma intervenção militar, liderada pelos EUA, em apoio à Coreia do Sul, enquanto a China e a União Soviética apoiavam o Norte. Embora tenha terminado com um armistício em 1953, não houve um acordo de paz, e as Coreias continuam divididas e tecnicamente em guerra. </p>
+            
+            <h2>Causas e Contexto</h2>
+
+            <h3>Divisão da Coreia:</h3>
+            <p>Após a derrota do Japão na Segunda Guerra Mundial, a Coreia, que foi uma colônia japonesa, foi dividida no Paralelo 38 em zonas de ocupação soviética (Norte) e americana (Sul).</p> 
+
+            <h3>Guerra Fria:</h3>
+            <p>A divisão gerou dois governos distintos, alinhados a cada potência da bipolarização mundial: o Norte com a União Soviética e o Sul com os Estados Unidos. Ambos os governos reivindicavam soberania sobre toda a península.</p>
+
+            <h2>O Início do Conflito </h2>
+
+            <h3>A Invasão:</h3> 
+            <p>Em 25 de junho de 1950, tropas norte-coreanas, com apoio soviético e chinês, invadiram a Coreia do Sul, cruzando o Paralelo 38 e avançando rapidamente pelo território sul-coreano.</p>
+
+            <h2>Envolvimento Internacional</h2>
+
+            <h3>ONU e EUA:</h3>
+            <p>A ONU autorizou uma coalizão militar para defender a Coreia do Sul. Os Estados Unidos enviaram tropas e assumiram a liderança da força multinacional, seguindo a doutrina anticomunista.</p> 
+            
+            <h3>China e URSS:</h3>
+            <p>A União Soviética forneceu apoio logístico e armas à Coreia do Norte, enquanto a China enviou centenas de milhares de soldados para o conflito. </p>
+
+            <h2>Desenrolar da Guerra e Fim</h2>
+
+            <h3>Guerra de Atrito:</h3>
+            <p>O conflito evoluiu para uma guerra de atrito, com pesados bombardeios americanos e combates intensos ao longo da linha de frente. </p>
+
+            <h3>Armistício:</h3>
+            <p>Em 27 de julho de 1953, um acordo de armistício foi assinado, interrompendo as hostilidades, mas não encerrando a guerra.</p> 
+            
+            <h2>Consequências</h2>
+
+            <h3>Divisão Permanente:</h3>
+            <p>A Coreia permaneceu dividida, com uma Zona Desmilitarizada (DMZ) criada ao longo do Paralelo 38, que ainda é uma área altamente militarizada.</p> 
+
+            <h3>Milhões de Vítimas:</h3>
+            <p>A guerra causou milhões de mortos, incluindo muitos civis, e forçou milhões de pessoas a se tornarem refugiadas, separando famílias. </p>
+
+            <h3>Legado Duradouro:</h3>
+            <p>A Guerra da Coreia, um símbolo da Guerra Fria, deixou um legado de hostilidade e tensão persistente entre as duas Coreias, que continuam tecnicamente em guerra até hoje.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            } 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+    <link rel="stylesheet" href="estilos/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> <!-- link para o icone do menu https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%23e3e3e3-->
+</head>
+<body>
+    <header>
+        <h1>Tudo sobre as Grandes Guerras</h1>
+        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()"> menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="menuResponsivo.html">Primeira Guerra</a></li>
+                <li><a href="menuResponsivo2.html">Segunda Guerra</a></li>
+                <li><a href="menuResponsivo3.html">Guerra Fria</a></li>
+                <li><a href="menuResponsivo4.html">Guerra da Coreia</a></li>
+                <li><a href="menuResponsivo5.html">Guerra ao Terror</a></li>
+            </ul>
+        </menu">
+    </header>
+    <main>
+        <article>
+            <h2>A "Guerra ao Terror" (11/09/2001)</h2> 
+            <p>Foi a campanha militar global lançada pelos Estados Unidos e aliados após os ataques de 11 de setembro de 2001 para combater organizações terroristas como a Al-Qaeda. O conflito envolveu invasões no Afeganistão e Iraque, resultou em milhões de mortes e deslocamentos, e teve profundas consequências negativas nos direitos humanos, na economia e na política internacional, apesar de fortalecer outros grupos terroristas como o Estado Islâmico.</p> 
+            
+            <h2>Origem e Objetivos</h2>
+
+            <h3>Os Ataques de 11 de Setembro:</h3>
+            <p>O principal motivo para o início da "Guerra ao Terror" foram os atentados terroristas contra os Estados Unidos, que levaram o então presidente George W. Bush a declarar guerra.</p> 
+
+            <h3>Objetivo:</h3>
+            <p>A campanha visava enfraquecer e desmantelar organizações terroristas, como a Al-Qaeda, através de uma combinação de esforços militares, políticos, ideológicos e econômicos. </p>
+
+            <h2>Principais Eventos e Consequências</h2>
+
+            <h3>Invasões no Afeganistão e Iraque:</h3>
+            <p>Os EUA e seus aliados invadiram o Afeganistão para derrubar o regime Talibã, que abrigava a Al-Qaeda, e o Iraque, argumentando que o país representava uma ameaça.</p> 
+
+            <h3>Ascensão do Estado Islâmico:</h3>
+            <p>Paradoxalmente, a desestabilização causada pela guerra no Iraque e no Afeganistão abriu espaço para o fortalecimento de outros grupos extremistas, levando à formação do Estado Islâmico (ISIS). </p>
+
+            <h3>Custo Humano e Material:</h3>
+            <p>As guerras resultaram em cerca de 4,5 milhões de mortes diretas e indiretas, a maioria civis, e no deslocamento de milhões de pessoas. Além disso, o custo econômico para os EUA foi de cerca de 8 trilhões de dólares.</p> 
+
+            <h2>Legado Negativo</h2>
+
+            <h3>Violações de Direitos Humanos:</h3>
+            <p>A "Guerra ao Terror" foi marcada por denúncias de tortura, prisões secretas da CIA e transferência ilegal de prisioneiros (rendições extraordinárias). </p>
+
+            <h3>Instrumentalização Política:</h3>
+            <p>A justificativa da luta contra o terrorismo foi utilizada por líderes autoritários em outros países para justificar medidas repressivas e restrições à liberdade. </p>
+
+            <h3>Perda de Liberdade e Vigilância:</h3>
+            <p>Nos EUA, a criação de leis e sistemas de vigilância em nome da segurança resultou em uma perda de liberdades, com o governo autorizando a tortura e o rastreamento de cidadãos. </p>
+
+            <h3>Ineficácia no Combate ao Terrorismo:</h3>
+            <p>Embora o objetivo fosse acabar com o terrorismo, as mortes causadas por atos terroristas triplicaram em comparação com o início do conflito, e o problema se tornou mais generalizado, com grupos extremistas atuando em várias regiões do mundo.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            } 
+        }
+    </script>
+</body>
+</html>
