@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  Seletores CSS personalizados
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = clildren
+         */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a { /* link */
+            color: brown;
+            text-decoration: none; /* sem sublinhado */
+            font-weight: bold; /* negrito */
+        }
+        a:visited { /* link visitado */
+            color: rgb(35, 146, 65);
+        }
+        a:hover { /* link ao passar o mouse */
+            color: black; /* cor do link ao passar o mouse */
+            text-decoration: underline; /* sublinhado */
+        }
+        a:active { /* link ativo */
+            color: rgb(252, 107, 3);
+        }
+        /* Pseudo-elementos */
+        .especial::before { /* antes do link */
+            content: '☠'; 
+        }
+        .especial::after { /* depois do link */
+            content:'☠';
+        }
+        .especial { /* classe especial */
+            background-color: rgb(254, 128, 254);
+        }
+        a::before { /* antes de todos os links */
+            content: '✠';
+        }
+        a::after { /* depois de todos os links */
+            content:'☣';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/Souzx4" target="_blank" class="especial">GitHub</a></li> <!-- link para o GitHub com classe especial-->
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li> <!-- link para o YouTube -->
+        <li><a href="https://erikasarti.com/html/dingbats-simbolos-desenhos/#google_vignette" target="_blank">Sibolos HTML5</a></li> <!-- link para símbolos HTML5 -->
+    </ul>
+</body>
+</html>
