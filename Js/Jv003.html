@@ -17,8 +17,16 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nemo tempora accusamus officiis ipsam corrupti odit alias earum at vero. Fugit vero quas voluptatibus officia laboriosam optio dicta a eum!</p>
 
     <script>
-        var nome = window.prompt('qual o seu nome?')
-        window.alert(`Olá ${nome}, seja bem vindo(a) ao JavaScript!`) // concatenação (+)
+        // parseInt() converte string para number inteiro ex 5
+        // parseFloat() converte string para number decimal ex 5.5
+        // Number() converte string para number inteiro ou decimal ex 5 ou 5.5
+        // String() converte number para string
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var s = n1 + n2
+        window.alert(`A soma dos valores é ${s}`) // template string (crase)
+        // (number + Number) para adição
+        // (string + string) para concatenação
     </script>
 </body>
 </html>
