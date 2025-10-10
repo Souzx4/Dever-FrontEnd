@@ -1,6 +1,4 @@
-package Java;
-
-public class soma {
+public class caso01 {
     public static void main(String args[]) {
         int valor1 = 5;
         int valor2 = 10;

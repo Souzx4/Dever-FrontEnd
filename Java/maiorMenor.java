@@ -1,5 +1,3 @@
-package Java;
-
 public class maiorMenor {
     public static void main(String args[]) {
         int valor1 = 5;
