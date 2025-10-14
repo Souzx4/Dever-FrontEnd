@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(4, 4, 189, 0.718);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM DOM DOM DOMMMM</h1>
+    <p name="test">paia</p>
+    <p >Lembra de mim?</p>
+    <p>Aprendendo usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        corpo.style.background = 'green' // para mudar a cor de fundo
+
+        var p1 = window.document.getElementsByTagName('p')[2]
+        p1.style.color = 'red' // para mudar a cor do style do primeiro p
+
+         window.document.write('está escrito assim: ' + p1.innerText)  
+         //para pegar oque está escrito na primeira e repetir 
+        
+         
+         window.alert(p1.innerText) // pega somente o texto
+         document.write(p1.innerHTML) // pega todo o html com tags
+
+        /* 
+         var d = window.document.getElementById('msg')
+         d.style.background = 'red' // mudou o fundo do texto Clique em mim
+         d.innerText = 'estou aguardando......' // vai mudar a frase Clique em mim por estou aguardando
+
+         invez de usar assim use da maneira abaixo */ 
+         var d = window.document.querySelector('div#msg')
+         d.style.background = 'blue'
+
+         var name = window.document.getElementsByTagName('test')[0]
+         d.innerText = 'Olá' // tbm da de fazer a seleção por name
+
+         // o window.document.getEletementSByTagClass é do mesmo jeito
+    </script>
+</body>
+</html>
