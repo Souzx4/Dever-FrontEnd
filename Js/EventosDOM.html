@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background: rgba(1, 126, 1, 0.597);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+        <!-- invez de usar onclick="Clicar()" onmouseenter="Entrar()" onmouseout="Sair()" só é fazer da forma que foi colocado abaixo no script-->
+        Interaja..
+        <!--event reference" para saber todos os comandos js -->
+    </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', Clicar)
+        a.addEventListener('mouseenter', Entrar)
+        a.addEventListener('mouseout', Sair)
+        
+        function Clicar() {
+            
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+        function Entrar() {
+            a.innerText = 'Entrou'
+        }
+        function Sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
