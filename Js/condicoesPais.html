@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Paises</title>
+</head>
+<body>
+    <h1>Sua nacionalidade</h1>
+    Sua nacionalidade é <input type="text" name="nascido" id="nascido">
+    <input type="button" value="Pesquisar" onclick="Calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function Calcular(){
+            var nas = document.querySelector('input#nascido')
+            var res = document.querySelector('div#res')
+            var pais = nas.value
+            res.innerHTML = `Sua nascionalidade é ${nascido}`
+            if (pais.trim().toLowerCase() == 'brasil') {
+                res.innerHTML = `Você é Brasileiro(a)`
+            } else {
+                res.innerHTML = `Você é Estrangeiro(a)`
+            }
+        }
+    </script>
+</body>
+</html>
