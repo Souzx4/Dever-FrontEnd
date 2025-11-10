@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercicio</title>
+    <title>contador</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <section>
         <div>
             <p>Inicio: 
-                <input type="number" name="cont-i" id="cont-i">
+                <input type="number" name="cont-i" id="cont-i" min="1">
             </p>
             <p> Fim:
                 <input type="number" name="cont-f" id="cont-f">
@@ -21,7 +21,12 @@
             <p> Passo:
                 <input type="number" name="cont-p" id="cont-p">
             </p>
-         <button id="but-cont">contar</button> 
+            <p>
+                <input type="button" value="Contar" onclick="Contador()">
+            </p>
+        </div>
+        <div id="res">
+            prencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
