@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de numeros</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Numero (entre 1 e 100):
+                <input type="number" name="numero" id="num">
+                <input type="button" value="Adicionar" onclick="Adicionar()">
+            </p>
+        </div>
+        <div>
+            <select name="select" id="sele" size="10"></select>
+        </div>
+        <div id="res">
+            <input type="button" value="Analisar" onclick="Analisar()">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Souzx4</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
