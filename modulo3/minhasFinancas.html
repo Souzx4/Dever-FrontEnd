@@ -40,6 +40,7 @@
     </style>
 </head>
 <body>
+    <button onclick="resetarDados()">Resetar dados salvos</button>
     <h1 class="h1">Finanças</h1>
     <!--
      anatomia para tabelas grandes
@@ -69,15 +70,15 @@
             <tr>
                 <td>Gustavo Mendonça</td>
                 <td class="num"> 5 de setembro </td>
-                <td class="num">R$ 1600,00</td>
+                <td class="num valor" contenteditable="true">1600</td>
                 <td>0</td>
                 <td class="num">32x de R$ 50,00</td>
-                <td>3 (parcelas)= 150,00</td>
+                <td class="pagas" contenteditable="true">150</td>
             </tr>
             <tr>
                 <td>Bruno Matos</td>
                 <td class="num">30 de maio</td>
-                <td class="num">R$ 600,00</td>
+                <td class="num valor" contenteditable="true">600</td>
                 <td>R$ 54,00</td>
                 <td class="num"> 0</td>
                 <td>5 (Juros) = 270,00</td>
@@ -85,7 +86,7 @@
             <tr>
                 <td>Bruno Matos</td>
                 <td class="num">11 de junho</td>
-                <td class="num">R$ 1000,00</td>
+                <td class="num valor" contenteditable="true">1000</td>
                 <td>R$ 80,00</td>
                 <td class="num"> 0</td>
                 <td>4 (Juros) = 320,00</td>
@@ -93,39 +94,39 @@
             <tr>
                 <td>Bruno Matos</td>
                 <td class="num">1 de novembro</td>
-                <td class="num">R$ 2300,00</td>
+                <td class="num valor" contenteditable="true">2300</td>
                 <td>0</td>
                 <td class="num">7x de R$ 350,00</td>
-                <td>0</td>
+                <td class="pagas" contenteditable="true">0</td>
             </tr>
             <tr>
                 <td>Tia do Bruno Matos</td>
                 <td class="num">2 de novembro</td>
-                <td class="num">R$ 1200,00</td>
+                <td class="num valor" contenteditable="true">1200</td>
                 <td>108,00</td>
                 <td class="num">0</td>
-                <td>0</td>
+                <td class="pagas" contenteditable="true">0</td>
             </tr>
             <tr>
                 <td>Ari</td>
                 <td class="num">5 de agosto</td>
-                <td class="num">R$ 970,00</td>
+                <td class="num valor" contenteditable="true">1000</td>
                 <td>0</td>
                 <td class="num"> 10x de R$ 97,00</td>
-                <td>4(parcelas)= 400,00</td>
+                <td class="pagas" contenteditable="true">400</td>
             </tr>
             <tr>
                 <td>Francisco</td>
                 <td class="num">8 de outubro</td>
-                <td class="num">R$ 150,00</td>
+                <td class="num valor" contenteditable="true">300</td>
                 <td>0</td>
                 <td class="num">0</td>
-                <td>0</td>
+                <td class="pagas" contenteditable="true">150</td>
             </tr>
             <tr>
                 <td>Ivan</td>
                 <td class="num">1 de outubro</td>
-                <td class="num">R$ 1200,00</td>
+                <td class="num valor" contenteditable="true">1200</td>
                 <td>50</td>
                 <td class="num">0</td>
                 <td>1 (Juros) = 50,00</td>
@@ -133,7 +134,7 @@
             <tr>
                 <td>Iraja</td>
                 <td class="num">09 de novembro</td>
-                <td class="num">R$ 2000,00</td>
+                <td class="num valor" contenteditable="true">2000</td>
                 <td>R$ 250,00</td>
                 <td class="num">0</td>
                 <td>0</td>
@@ -141,7 +142,7 @@
             <tr>
                 <td>Diesson</td>
                 <td class="num">tempo indeterminado</td>
-                <td class="num">R$ 2800,00</td>
+                <td class="num valor" contenteditable="true">2800</td>
                 <td>0</td>
                 <td class="num">0</td>
                 <td>0</td>
@@ -149,35 +150,44 @@
             <tr>
                 <td>Jonh</td>
                 <td class="num">21 de outubro</td>
-                <td class="num">R$ 2250,00</td>
+                <td class="num valor" contenteditable="true">2250</td>
                 <td>0</td>
                 <td class="num">3x</td>
-                <td>deu um 8 plus + R$ 2000,00</td>
+                <td class="pagas" contenteditable="true">250<!--deu um 8 plus + R$ 2000,00--></td>
             </tr>
             <tr>
                 <td>8 plus</td>
                 <td class="num">7 de novembro</td>
-                <td class="num">R$ 550,00</td>
+                <td class="num valor" contenteditable="true">550</td>
                 <td>0</td>
-                <td class="num">2x</td>
-                <td>vendido para o iraja por 700</td>
+                <td class="num"></td>
+                <td>0</td>
             </tr>
             <tr>
                 <td>8 plus</td>
                 <td class="num">22 de outubro</td>
-                <td class="num">R$ 550,00</td>
+                <td class="num valor" contenteditable="true">550</td>
                 <td>0</td>
-                <td class="num">2x</td>
-                <td>Deu 300, falta 400</td>
+                <td class="num">0</td>
+                <td>0</td>
 
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="5">Total a receber</th>
-                <td class="num"><strong>R$ 15.950,00</strong></td>
+                <th colspan="5">Total a receber </th>
+                <td class="num" id="res"><strong>...</strong></td>
+            </tr>
+            <tr>
+                <th colspan="5">Total já pago</th>
+                <td class="num" id="res2"><strong>...</strong></td>
+            </tr>
+            <tr>
+                <th colspan="5">Saldo Restante</th>
+                <td class="num" id="res3"><strong>...</strong></td>
             </tr>
         </tfoot>
     </table>
+    <script src="minhasFinancas.js"></script>
 </body>
 </html>
