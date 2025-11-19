@@ -63,7 +63,7 @@
                 <th>Valor</th>
                 <th>Juros</th>
                 <th>Parcelamento</th>
-                <th>Parcelas pagas</th>
+                <th>Valor pago</th>
             </tr>
         </thead>
         <tbody>
@@ -141,11 +141,11 @@
             </tr>
             <tr>
                 <td>Diesson</td>
-                <td class="num">tempo indeterminado</td>
+                <td class="num">15 de novembro</td>
                 <td class="num valor" contenteditable="true">2800</td>
                 <td>0</td>
                 <td class="num">0</td>
-                <td>0</td>
+                <td class="pagas" contenteditable="true">1000</td>
             </tr>
             <tr>
                 <td>Jonh</td>
@@ -175,19 +175,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="5">Total a receber </th>
-                <td class="num" id="res"><strong>...</strong></td>
-            </tr>
-            <tr>
-                <th colspan="5">Total já pago</th>
-                <td class="num" id="res2"><strong>...</strong></td>
-            </tr>
-            <tr>
                 <th colspan="5">Saldo Restante</th>
                 <td class="num" id="res3"><strong>...</strong></td>
             </tr>
         </tfoot>
     </table>
+    <div class="btn-container">
+        <button onclick="adicionarLinha()">+ Adicionar Linha</button>
+    </div>
     <script src="minhasFinancas.js"></script>
 </body>
 </html>
