@@ -17,13 +17,7 @@ body {
     font-size: 25px;
     text-align: justify;
 }
-/*header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: var(--segunda);
-}*/
+
 h1 {
     padding-top: 15px;
     text-align: center;
