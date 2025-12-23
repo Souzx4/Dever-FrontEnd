@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    max-width: 768px;
+    align-content: center;
+}
+
+:root {
+    --principal: #FF8C00;
+    --segunda: #1f5895;
+    --terceira: #FFFFFF;
+}
+
+body {
+    background-color: var(--segunda);
+    font-size: 25px;
+    text-align: justify;
+}
+
+h1 {
+    padding: 15px;
+    color: var(--principal);
+    text-align: center;
+}
+h2 {
+    color: var(--principal);
+    margin: 20px;
+}
+p {
+    margin: 20px;
+    color: var(--terceira);
+}
