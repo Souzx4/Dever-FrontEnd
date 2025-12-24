@@ -52,7 +52,7 @@ ul li a {
     color: var(--terceira);
     display: block;
 }
-section p {
+header p {
     color: var(--terceira);
     margin: 10px;
 }
