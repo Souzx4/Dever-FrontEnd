@@ -64,7 +64,7 @@ header p {
     color: var(--terceira);
     margin: 10px;
 }
-section h2 {
+header h2 {
     font-size: 33px;
 }
 #principal {
