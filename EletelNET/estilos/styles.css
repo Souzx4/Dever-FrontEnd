@@ -46,12 +46,18 @@ ul li {
     padding: 10px;
     border-radius: 8px;
     text-align: center;
-    transition: background-color 0.3s;
 }
 ul li a {
     text-decoration: none;
     color: var(--terceira);
     display: block;
+}
+ul li:hover {
+    background-color: var(--segunda);
+    color: var(--principal);
+    border: 3px solid var(--terceira);
+    box-shadow: 1px 1px 7px var(--terceira);
+    cursor: pointer;
 }
 header p {
     color: var(--terceira);
