@@ -27,6 +27,12 @@ section h1 {
 section ul li {
     width: 90vw;
 }
+.geral div {
+    font-size: large;
+}
+.geral h2 {
+    font: large;
+}
 .geral p {
-    text-align: left;
+    font-size: large;
 }
