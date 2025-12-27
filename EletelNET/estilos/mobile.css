@@ -28,11 +28,11 @@ section ul li {
     width: 90vw;
 }
 .geral div {
-    font-size: large;
+    text-align: left;
 }
 .geral h2 {
-    font: large;
+    text-align: center;
 }
 .geral p {
-    font-size: large;
+    text-align: left;
 }
