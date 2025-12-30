@@ -60,3 +60,9 @@ h1 {
     text-align: justify;
     padding-bottom: 6px;
 }
+
+.voltar img{
+    background-color: var(--principal);
+    padding-left: 5px;
+    width: 40px;
+}
