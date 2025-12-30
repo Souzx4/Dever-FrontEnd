@@ -6,6 +6,7 @@
     <title>Checklists e Rotinas</title>
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/mobile.css" media="screen and (max-width: 580px)">
+    <script src="../JavaScript/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,6 +14,9 @@
         <h1>Checklists e Rotinas do Suporte Técnico</h1>
     </header>
     <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchDocs()" placeholder="🔍 Pesquisar processos ou artigos...">
+        </div>
         <section class="geral">
             <p>Esta seção apresenta os checklists e rotinas essenciais para o suporte técnico na Eletelnet. Seguir estas diretrizes ajudará a garantir que todas as tarefas sejam realizadas de maneira eficiente e consistente.</p>
         </section>

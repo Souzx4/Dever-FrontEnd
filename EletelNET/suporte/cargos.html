@@ -6,6 +6,7 @@
     <title>Cargos e Responsáveis</title>
     <link rel="stylesheet" href="../estilos/geral.css">
     <link rel="stylesheet" href="../estilos/mobile.css" media="screen and (max-width: 580px)">
+    <script src="../JavaScript/script.js"></script>
 </head>
 <body>
     <header>
@@ -13,6 +14,9 @@
         <h1>Cargos e Responsáveis</h1>
     </header>
     <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchDocs()" placeholder="🔍 Pesquisar processos ou artigos...">
+        </div>
         <section class="geral">
             <p>Esta seção descreve os cargos e responsáveis dentro do setor de suporte técnico da Eletelnet. Cada cargo tem funções específicas que contribuem para a eficiência e qualidade do atendimento ao cliente.</p>
         </section>

@@ -66,3 +66,27 @@ h1 {
     padding-left: 5px;
     width: 40px;
 }
+
+.search-container {
+    padding: 5px 0;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid var(--principal);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    box-shadow: 0px 0px 10px rgba(255, 140, 0, 0.5);
+}
+
+/* Classe para esconder itens que não condizem com a busca */
+.hide {
+    display: none !important;
+}
