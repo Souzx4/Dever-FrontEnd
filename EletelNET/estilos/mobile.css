@@ -1,42 +1,60 @@
 @charset "UTF-8";
-header img {
-    width: 150px;
-    margin-top: 10px;
+header {
+    padding: 15px 10px; /*mais baixo para ganhar espaço de tela*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 header h1 {
-    font-size: 35px;
+    font-size: 24px;
+    margin: 0;
+    width: 80%;
 }
-header h2 {
-    font-size: 17px;
+
+.voltar {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
-header p {
-    
-    justify-content: center;
-    font-size: 15.4px;
-    padding: 0 10px;
+
+.voltar img {
+    width: 27px;
 }
-header img {
-    width: 40px;
-    
+
+main {
+    padding: 0 10px; /*menos maegem as laterais o mobile*/
+    margin-top: 15px;
 }
-section {
-    justify-content: center;
+
+.search-container {
+    margin-bottom: 20px;
 }
-section ul {
-    flex-flow: column nowrap;
+
+#searchInput {
+    padding: 10px;
+    font-size: 14px;
 }
-section h1 {
-    flex-basis: 50px;
+
+.categoria {
+    padding: 15px; /*mais compacto*/
+    margin-bottom: 15px;
 }
-section ul li {
-    width: 90vw;
+
+.categoria h3 {
+    font-size: 18px;
 }
-.geral div {
-    text-align: left;
+
+.item-suporte {
+    padding: 12px;
 }
-.geral h2 {
-    text-align: center;
+
+.item-suporte h4 {
+    font-size: 16px;
 }
-.geral p {
-    text-align: left;
+
+.item-suporte p {
+    font-size: 14px;
 }

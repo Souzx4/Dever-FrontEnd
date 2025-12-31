@@ -31,64 +31,73 @@ header {
     transform: translateY(-50%); /*centraliza verticalmente no header*/
     margin: 0px;
 }
-/*-----------------------------*/
+
+.voltar img {
+    width: 40px;
+    transition: all 0.3s ease;
+}
+
+.voltar img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
 
 main {
-    background-color: white;
-    min-width: 300px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding: 20px;
-    max-width: 1000px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 10px 10px;
-}
-h1 {
-    font-size: 2em;
-    color: var(--terceira);
-    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
-}
-.geral h2 {
-    text-align: center;
-    font-size: 25px;
-    padding-top: 22px;
-    padding-bottom: 6px;
-}
-.geral p {
-    font-size: 20px;
-    text-align: justify;
-    padding-bottom: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.geral div {
-    font-size: 20px;
-    text-align: justify;
-    padding-bottom: 6px;
-}
-
-.voltar img{
-    background-color: var(--principal);
-    padding-left: 5px;
-    width: 40px;
-}
-
+/*Barra de Pesquisa*/
 .search-container {
-    padding: 5px 0;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 #searchInput {
     width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    border: 2px solid var(--principal);
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
     border-radius: 8px;
     outline: none;
-    transition: 0.3s;
 }
 
-#searchInput:focus {
-    box-shadow: 0px 0px 10px rgba(255, 140, 0, 0.5);
+#searchiInput:focus{
+    border-color: var(--principal);
+}
+
+/* Seções e Categorias */
+.categoria {
+    background-color: var(--terceira);
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.categoria h3 {
+    color: var(--principal);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.item-suporte {
+    background-color: #fafafa;
+    border-left: 4px solid var(--principal);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.item-suporte h4 {
+    margin: 0 0 10px 0;
+    color: #444;
+}
+
+.item-suporte p {
+    margin: 0;
+    font-size: 0.95em;
 }
 
 /* Classe para esconder itens que não condizem com a busca */
