@@ -14,20 +14,33 @@ body {
     margin: 0;
 }
 
-/* Header */
+/* 1. Precisamos dizer que o header é o ponto de referência */
 header {
     background-color: var(--primary-color);
     color: var(--white);
-    padding: 20px;
+    padding: 30px 20px; /* Aumentei um pouco o respiro */
     text-align: center;
+    position: relative; /* ESSENCIAL para o ícone se alinhar aqui dentro */
 }
 
+/* 2. Posiciona o container do link no canto esquerdo */
+.voltar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente no header */
+    margin: 0;
+}
+
+/* 3. Estiliza a imagem com o filtro branco e tamanho discreto */
 .voltar img {
-    width: 30px;
-    transition: transform 0.2s;
+    width: 40px; /* Um pouco menor para ser discreto */
+    transition: all 0.3s ease;
 }
 
+/* 4. Efeito ao passar o mouse */
 .voltar img:hover {
+    opacity: 1; /* Fica nítido quando o usuário quer clicar */
     transform: scale(1.1);
 }
 
@@ -90,3 +103,4 @@ main {
     margin: 0;
     font-size: 0.95em;
 }
+
