@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+@charset "UTF-8";
 header {
     padding: 15px 10px; /*mais baixo para ganhar espaço de tela*/
     position: relative;
@@ -57,4 +59,26 @@ main {
 
 .item-suporte p {
     font-size: 14px;
+}
+
+section {
+    justify-content: center;
+}
+section ul {
+    flex-flow: column nowrap;
+}
+section h1 {
+    flex-basis: 50px;
+}
+section ul li {
+    width: 90vw;
+}
+.geral div {
+    text-align: left;
+}
+.geral h2 {
+    text-align: center;
+}
+.geral p {
+    text-align: left;
 }
