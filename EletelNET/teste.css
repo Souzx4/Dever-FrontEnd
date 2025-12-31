@@ -32,6 +32,8 @@ header {
     margin: 0;
 }
 
+/*--------------------------------------------------*/
+
 /* 3. Estiliza a imagem com o filtro branco e tamanho discreto */
 .voltar img {
     width: 40px; /* Um pouco menor para ser discreto */

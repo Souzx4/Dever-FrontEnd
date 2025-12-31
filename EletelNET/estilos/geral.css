@@ -1,32 +1,37 @@
 @charset "UTF-8";
 
-* {
-    margin: auto;
-    padding: 0px;
-    box-sizing: border-box;
-    max-width: 960px;
-    align-content: center;
-}
-
 :root {
     --principal: #FF8C00;
-    --segunda: #1f5895;
-    --terceira: #FFFFFF;
+    --segunda: #f4f7f6;
+    --terceira: #ffffff;
+    --text-cor: #333;
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: var(--segunda);
-    font-size: 25px;
-    text-align: justify;
+    color: var(--text-cor);
+    line-height: 1.6;
+    margin: 0;
 }
 
+/*1 Precisamos dizer que o header é o ponto de referencia*/
 header {
     background-color: var(--principal);
-    min-height: 150px;
+    color: var(--terceira);
+    padding: 30px 20px;
     text-align: center;
-    padding-top: 10px;
+    position: relative;
 }
 
+.voltar {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%); /*centraliza verticalmente no header*/
+    margin: 0px;
+}
+/*-----------------------------*/
 
 main {
     background-color: white;
