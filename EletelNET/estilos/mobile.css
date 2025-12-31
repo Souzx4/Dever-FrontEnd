@@ -62,7 +62,7 @@ main {
 }
 
 section {
-    justify-content: center;
+    justify-content: left;
 }
 section ul {
     flex-flow: column nowrap;
