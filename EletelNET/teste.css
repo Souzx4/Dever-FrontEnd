@@ -1,0 +1,92 @@
+/* Configurações Gerais */
+:root {
+    --primary-color: #0056b3; /* Azul Eletelnet */
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+.voltar img {
+    width: 30px;
+    transition: transform 0.2s;
+}
+
+.voltar img:hover {
+    transform: scale(1.1);
+}
+
+/* Container Principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Barra de Pesquisa */
+.search-container {
+    margin-bottom: 30px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+#searchInput:focus {
+    border-color: var(--primary-color);
+}
+
+/* Seções e Categorias */
+.categoria {
+    background: var(--white);
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.categoria h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Artigos e Itens */
+.item-suporte {
+    background: #fafafa;
+    border-left: 4px solid var(--primary-color);
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.item-suporte h4 {
+    margin: 0 0 10px 0;
+    color: #444;
+}
+
+.item-suporte p {
+    margin: 0;
+    font-size: 0.95em;
+}
