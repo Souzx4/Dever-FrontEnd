@@ -10,7 +10,7 @@ function searchDocs() {
 
     categorias.forEach(categoria => {
         // Pega os itens DESTA categoria específica
-        let items = categoria.querySelectorAll('.item-suporte');
+        let items = categoria.querySelectorAll('.item');
         let temItemVisivelNessaCategoria = false;
 
         items.forEach(item => {

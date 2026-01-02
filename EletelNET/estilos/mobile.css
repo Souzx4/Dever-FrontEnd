@@ -52,15 +52,15 @@ main {
     font-size: 18px;
 }
 
-.item-suporte {
+.item {
     padding: 12px;
 }
 
-.item-suporte h4 {
+.item h4 {
     font-size: 16px;
 }
 
-.item-suporte p {
+.item p {
     font-size: 10px;
 }
 
@@ -80,12 +80,4 @@ section h1 {
 section ul li {
     width: 90vw;
 }
-.geral div {
-    text-align: left;
-}
-.geral h2 {
-    text-align: center;
-}
-.geral p {
-    text-align: left;
-}
+
