@@ -14,6 +14,9 @@ header h1 {
     margin: 0;
     width: 80%;
 }
+header h2 {
+    font-size: 20px;
+}
 
 .voltar {
     position: absolute;
