@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
 header {
     padding: 15px 10px; /*mais baixo para ganhar espaço de tela*/
     position: relative;
