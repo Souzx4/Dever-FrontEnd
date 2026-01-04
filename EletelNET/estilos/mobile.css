@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-*{
+/**{
     box-sizing: border-box;
-    outline-offset: 1px solid red !important;
-}
+}*/
 header {
     padding: 15px 10px; /*mais baixo para ganhar espaço de tela*/
     position: relative;
