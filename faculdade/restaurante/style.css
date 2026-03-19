@@ -9,11 +9,54 @@
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
-main {
-    padding-top: 10px;
+.headerP {
+    font-size: 18px;
+    padding-top: 5px;
+}
 
+main {
+    text-align: center;
+    background-image: url(fotoCapa.png);
+    background-size: cover;
+    padding: 220px;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 4px;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.esqueceu {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.criar {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+button {
+    padding: 8px 82px 8px 82px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
