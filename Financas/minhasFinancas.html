@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,32 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             border-collapse: collapse;
             width: 60%;
             margin: auto;
         }
+
         caption {
             font-size: 1.2em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot{
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
+
         tbody tr:nth-child(even) {
             background-color: lightgray;
         }
@@ -34,11 +42,13 @@
         .h1 {
             text-align: center;
         }
+
         .num {
             text-align: right;
         }
     </style>
 </head>
+
 <body>
     <button onclick="resetarDados()">Resetar dados salvos</button>
     <h1 class="h1">Finanças</h1>
@@ -188,7 +198,7 @@
                 <td>mae do Juliano</td>
                 <td class="num">13 de janeiro</td>
                 <td class="num valor" contenteditable="true">1100</td>
-                <td>[R$ 110]</td>
+                <td>[R$ 110] 1 (juros) = 110,00</td>
                 <td>0</td>
                 <td class="pagas" contenteditable="true">0</td>
             </tr>
@@ -237,7 +247,7 @@
                 <td class="num">10x de 200</td>
                 <td class="pagas" contenteditable="true">600</td>
             </tr>
-            
+
             <tr>
                 <td>Juliano</td>
                 <td class="num">28 de janeiro</td>
@@ -264,7 +274,7 @@
                 <td>0</td>
                 <td class="pagas" contenteditable="true">0</td>
             </tr>
-        
+
         </tbody>
         <tfoot>
             <tr>
@@ -278,4 +288,5 @@
     </div>
     <script src="minhasFinancas.js"></script>
 </body>
+
 </html>
